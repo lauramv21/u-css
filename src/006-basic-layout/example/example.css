@@ -3,3 +3,86 @@
  * Version: 1
  * By: xxx
  */
+
+#bottom-half, #top-half{
+    background-color: rgb(255,207,198);
+}
+
+#bottom-half{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-top-half{
+    clear:left;
+}
+
+#footer-bottom-half{
+    flex-direction: row;
+}
+
+#footer-bottom-half, #footer-top-half{
+    background-color: rgb(214,77,54);
+}
+
+#header-top-half, #header-bottom-half{
+    background-color: rgb(214,77,54);
+}
+
+#header-top-half ul, #footer-top-half ul, #header-bottom-half ul, #footer-bottom-half ul{
+    list-style: none;
+}
+
+#header-top-half ul li, #footer-top-half ul li, #header-bottom-half ul li, #footer-bottom-half ul li{
+    display: inline;
+    color: rgb(255,255,255);
+    padding-right: 30px;
+}
+
+#header-bottom-half{
+    flex-direction: row;
+}
+
+#main-top-half{
+    border-left: 300px solid rgb(135,208,211);
+    float: left;
+    padding: 10px 15px;
+}
+
+#main-bottom-half {
+    padding: 10px 15px;
+}
+
+.section-bottom{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: stretch;
+
+}
+
+#sidebar-top-half{
+    float: left;
+    margin-right: -300px;
+    position: relative;
+    width: 300px;
+}
+
+#sidebar-bottom-half{
+    width: 300px
+}
+
+#sidebar-top-half, #sidebar-bottom-half{
+    background-color: rgb(135,208,211);
+}
+
+#top-half{
+    height: 50%;
+    margin: 30px auto;
+}
+
+
+#header-top-half,
+#footer-top-half {
+    overflow: hidden;
+    zoom: 1;
+}

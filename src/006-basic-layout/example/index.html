@@ -35,8 +35,8 @@
       <div class="container">
 
         <h3>1. Without a wrapper <code>div</code>, with border and negative margin</h3>
-        <div>
-          <div>
+        <div id="top-half">
+          <div id="header-top-half">
             <ul>
               <li>
                 <span> Home </span>
@@ -51,7 +51,7 @@
           </div>
 
           <div>
-            <ul class="mdl-list">
+            <ul class="mdl-list" id="sidebar-top-half">
               <li class="mdl-list__item">
               <span class="mdl-list__item-primary-content">
                 <i class="material-icons mdl-list__item-icon">home</i>
@@ -73,7 +73,7 @@
             </ul>
           </div>
 
-          <div class="main">
+          <div id="main-top-half">
             <p>Lorem ipsum...</p>
             <p>Lorem ipsum...</p>
             <p>Lorem ipsum...</p>
@@ -86,7 +86,7 @@
             </div>
           </div>
 
-          <div>
+          <div id="footer-top-half">
             <ul>
               <li>
                 <span> Talos Digital </span>
@@ -100,8 +100,8 @@
 
         <h3>2. Using flex, flex-direction, and wrapper <code>div</code></h3>
 
-        <div>
-          <div>
+        <div id="bottom-half">
+          <div id="header-bottom-half">
             <ul>
               <li>
                 <span> Home </span>
@@ -115,8 +115,8 @@
             </ul>
           </div>
 
-          <div>
-            <div>
+          <div class="section-bottom">
+            <div id="sidebar-bottom-half">
               <ul class="mdl-list">
                 <li class="mdl-list__item">
                 <span class="mdl-list__item-primary-content">
@@ -139,7 +139,7 @@
               </ul>
             </div>
 
-            <div>
+            <div id="main-bottom-half">
               <p>Lorem ipsum...</p>
               <p>Lorem ipsum...</p>
               <p>Lorem ipsum...</p>
@@ -153,7 +153,7 @@
             </div>
           </div>
 
-          <div>
+          <div id="footer-bottom-half">
             <ul>
               <li>
                 <span> Talos Digital </span>
