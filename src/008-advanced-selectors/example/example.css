@@ -150,4 +150,46 @@ footer div {
   width: 90px;
 }
 
+#main-title{
+  font-size:25px;
+}
 
+.as-header h1{
+  font-size: 25px;
+  padding-bottom: 0px;
+}
+
+.as-container ul{
+  list-style: none;
+  padding-left:0px;
+  color: rgb(121, 121, 119);
+}
+
+.as-container ul li a{
+  color: rgb(121, 121, 119);
+  font-size: 10px;
+  line-height: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.as-button-list li:hover{
+  background-color: rgb(255,194,212);
+}
+
+.as-button-list li{
+  margin-bottom: 2px;
+}
+
+#third-list a:hover{
+  color:rgb(255,194,212);
+}
+
+.as-card:hover img{
+  opacity: 0.4;
+}
+
+.as-card .as-card-img:hover img{
+  opacity: 1;
+  transform: scale(1.1);
+}
