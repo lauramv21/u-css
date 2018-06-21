@@ -3,3 +3,134 @@
  * Version: 1
  * By: xxx
  */
+
+.container{
+    background-color: rgb(232,232,232);
+    max-width: 1200px;
+    margin: auto;
+}
+
+.centered-text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.centered-box{
+    text-align: center;
+}
+
+.centered-box div{
+    background-color: rgb(211,211,211);
+    display: inline-block;
+    margin: 20px 5px;
+    max-width: 200px;
+    padding: 25px 25px;
+    text-align: left;
+}
+
+.centered-flexbox{
+    display:flex;
+    justify-content: center;
+}
+
+.centered-flexbox div{
+    background-color: rgb(211,211,211);
+    max-width: 200px;
+    margin: 5px 5px;
+    padding: 25px 25px;
+}
+
+
+.centered-line {
+    background-color: rgb(211,211,211);
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    margin-top: 20px;
+    padding-left:10px;
+    text-align: left;
+    vertical-align: middle;
+    width: 500px;
+}
+
+
+.centered-text,
+.center-within-parent,
+.flex-lines,
+.link-list,
+.vertically-center-within-parent,
+.vertical-line{
+    background-color: rgb(211, 211, 211);
+}
+
+
+.center-within-parent {
+    height: 200px;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+.child,
+.child-vertically{
+    background-color: rgb(169,169,169);
+    color: rgb(255,255,255);
+}
+
+.child{
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    margin-top: -50px;
+    width: 90%;
+    padding: 10px 10px;
+    margin-left: 20px;
+}
+
+.flex-lines{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-lines p{
+    padding: 70px 20px;
+}
+
+.link-list{
+    text-align: center;
+}
+
+.link-list div{
+    display: inline-block;
+    margin: 10px;
+
+}
+
+.vertical-line{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 200px;
+    width: 200px;
+}
+
+.vertical-line p{
+    padding: 55px 20px 30px 10px;
+}
+
+.vertically-center-within-parent{
+    margin-top: 40px;
+    position:relative;
+    height: 200px;
+    padding-top: 30px;
+}
+
+.child-vertically{
+    left: 50%;
+    padding: 10px 10px;
+    position: absolute;
+    top: 52%;
+    transform: translate(-50%,-57%);
+    width: 95%;
+}
