@@ -3,3 +3,250 @@
  * Version: 1
  * By: xxx
  */
+
+ @font-face {
+    font-family: 'raleway-bold';
+    src: url('../resources/fonts/raleway/raleway-bold-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../resources/fonts/raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../resources/fonts/raleway/raleway-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../resources/fonts/raleway/raleway-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../resources/fonts/raleway/raleway-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../resources/fonts/raleway/raleway-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'raleway-regular';
+    src: url('../resources/fonts/raleway/raleway-regular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../resources/fonts/raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../resources/fonts/raleway/raleway-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../resources/fonts/raleway/raleway-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../resources/fonts/raleway/raleway-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../resources/fonts/raleway/raleway-regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+ #background{
+    background-color: rgb(212,234,224);
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+
+.blue-container{
+    background-color: rgb(120,196,207);
+    position: relative;
+    padding-right: 40%;
+    padding-bottom: 20px;
+    overflow: auto;
+    width: 58%;
+}
+
+
+.blue-container h1{
+    color: white;
+}
+
+.blue-container div{
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.blue-container-content{
+    padding-left: 10px;
+}
+
+.blue-container-content p{
+    color: white;
+}
+
+.blue-container-child{
+    background-color: rgb(227,243,245);
+    padding: 20px 30px;
+    width: 95%;   
+}
+
+.blue-container div h1 span{
+    text-transform: uppercase;
+    border-bottom: dotted;
+}
+
+#main-container{
+    position:relative;
+}
+
+#container-right{
+    background-color: rgba(46, 78, 82, 0.6);
+    height:100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30%;
+    z-index: 2;
+}
+
+.container-yellow{
+    background-color: rgb(223, 224, 148);
+    height: 95%;
+    padding:20px;
+    position: absolute;
+    right: 7%;
+    width: 25%;
+    top: 7%;
+    z-index: 2;
+    color: rgb(140, 140, 98);
+}
+
+.container-yellow h1{
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 70px;
+}
+
+.container-yellow ul li:nth-child(2n){
+    font-size: 10pt;
+}
+
+.container-yellow ul li:nth-child(2n)::after{
+    content: "-using 'pt'";
+    font-family: raleway-bold;
+}
+
+.container-yellow ul li:nth-child(2n+1):not(:first-child){
+    font-family: raleway-regular;
+}
+
+
+.container-yellow ul li:nth-child(2n+1):not(:first-child)::after{
+    content:"-using 'em'";
+}
+
+hr{
+    border-color: red;
+    margin-left: 0px;
+    width: 90%;
+}
+
+#first::before{ 
+    content:'';
+    position:absolute;
+    display:block;
+    height: 100px;
+    width:100px;
+    background-color:rgb(234, 38, 70);
+    top: 44%;
+    left: 16%;
+    transform:rotate(35deg);
+        
+}
+
+#second::before{ 
+    content:'';
+    position:absolute;
+    display:block;
+    height: 100px;
+    width:100px;
+    background-color:rgb(234, 117, 59);
+    top: 49%;
+    left: 25%;
+    transform:rotate(35deg);
+    
+}
+
+#third::before{ 
+    content:'';
+    position:absolute;
+    display:block;
+    height: 100px;
+    width:100px;
+    background-color:rgb(187, 230, 131);
+    top: 54%;
+    left: 34%;
+    transform:rotate(35deg);
+    
+}
+
+#fourth::before{ 
+    content:'';
+    position:absolute;
+    display:block;
+    height: 100px;
+    width:100px;
+    background-color:rgb(85, 231, 199);
+    top: 59%;
+    left: 43%;
+    transform:rotate(35deg);
+    
+}
+
+#fifth::before{ 
+    content:'';
+    position:absolute;
+    display:block;
+    height: 100px;
+    width:100px;
+    background-color:rgb(57, 124, 219);
+    top: 62%;
+    left: 44%;
+    transform:rotate(35deg);
+    
+}
+
+#sixth::before{ 
+    content:'';
+    position:absolute;
+    display:block;
+    height: 100px;
+    width:100px;
+    background-color:rgb(234, 48, 197);
+    top: 63%;
+    left: 33%;
+    transform:rotate(35deg);
+    
+}
+
+#seventh::before{ 
+    content:'';
+    position:absolute;
+    display:block;
+    height: 100px;
+    width:100px;
+    background-color:rgb(215, 226, 230);
+    top: 64%;
+    left: 26%;
+    transform:rotate(35deg);
+    
+}
+
+p::first-letter{
+    font-family: raleway-bold;
+}
+
+.blue-container div .find{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    height: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    width: 180px;
+}
+
+.blue-container div .find input{
+    position: absolute;
+    margin-left: 11px;
+    top: 28%;
+    width: 100px;
+}
+
+.blue-container div .find i{
+    position: absolute;
+    top: 5%;
+    margin-left: -23px;
+}
+
+.blue-container div button{
+    background-color: rgb(255, 61, 128);
+    border-radius: 2px;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+
+}
