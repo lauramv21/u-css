@@ -3,3 +3,87 @@
  * Version: 1
  * By: xxx
  */
+
+h2,
+h3,
+p{
+    color:white;
+}
+
+ body{
+     height: 100%;
+}
+
+
+ #main-background{
+     background: radial-gradient(circle, rgba(245,162,117,0.9), rgba(210,79,46,1));
+ }
+
+ .box-left,
+ .box-right{
+     display: inline-block;
+     border-radius: 75px;
+     box-shadow: inset 5px 5px 5px rgb(245,162,117), 5px 5px 5px rgb(210,79,46);
+     overflow: auto;
+     width: 28%;
+
+ }
+
+ .box-left{
+    margin-right: 100px;
+    margin-left: 16%;
+ }
+
+.box-left img, 
+.box-right img{
+    display: inline-block;
+    border-radius: 50%;
+    width: 25%;
+    margin-top: -24%;
+    margin-left: 15px;
+    height: 88px;
+}
+
+.box-left div, 
+.box-right div{
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 60%;
+}
+
+.box-left h2,
+.box-right h2{
+    font-size: 93%;
+    margin-top: 6%;
+}
+
+
+.box-left p,
+.box-right p{
+    font-size: 90%;
+    margin-top: -13%;
+}
+
+
+.container .main-title span {
+    background: linear-gradient(to right, rgb(218,85,62),  rgba(250,145,114,0.3), rgb(218,85,62));
+    display: block;
+    height: 3px;
+    margin-left: 10%;
+    width: 80%;
+  }
+  
+.info-container{
+    margin-top:50px;
+}
+
+.main-title h2{
+    text-shadow: 3px -3px 3px black;
+    text-align:center;
+}
+
+.main-title h3{
+    text-shadow: -3px 3px 3px black;
+    text-align:center;
+}
