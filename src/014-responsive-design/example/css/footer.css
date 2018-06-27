@@ -114,12 +114,61 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .footer{
+    background-color: rgb(106,29,196);
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .footer{
+    background-color: rgb(255,98,38);
+  }
+
+  .content-down{
+    display:block;
+  }
+
+  .dropdown-footer .heading::after{
+    display:none;
+  }
+
+  .dropdown-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .dropdown-footer{
+    flex-grow: 1;
+    width: 450px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+  .footer{
+    background-color: rgb(239,24,97);
+  }
+
+  .content-down{
+    display:block;
+  }
+
+  .dropdown-footer .heading::after{
+    display:none;
+  }
+
+  .dropdown-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .dropdown-footer{
+    flex-grow: 1;
+    width: 300px;
+  }
+
+  .dropdown-footer .content-down img{
+    width:80px;
+  }
 }

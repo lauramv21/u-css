@@ -6,7 +6,7 @@
 
 /* General */
 nav.navbar-scroll {
-  background-color: #e91e63;
+  background-color: hsl(340, 82%, 52%);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
   top: 0;
 }
@@ -133,12 +133,47 @@ nav.navbar-no-scroll {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  nav.navbar-scroll{
+  background-color: rgb(106,29,196);
+  }
+  .navbar .responsive-icon{
+    display:none;
+  }
+
+  .navbar #menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-top: 55px;
+  }
+
+  .navbar #menu > li{
+    display:inline-block;
+    margin-right: 35px;
+  }
+
+  .navbar #menu li:hover a::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width .3s ease;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  nav.navbar-scroll{
+    background-color: rgb(255,98,38);
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+
+  nav.navbar-scroll{
+    background-color: rgb(239,24,97);
+  }
 }
