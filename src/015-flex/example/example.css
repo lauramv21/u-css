@@ -3,3 +3,123 @@
  * Version: 1
  * By: xxx
  */
+
+#background{
+    background-image: url(../resources/images/image.jpg);
+    height: 250px;
+    margin: -20px -20px 0px -20px;
+    position: relative;
+    z-index: -1;
+}
+
+.description > div{
+    color: rgb(120, 122, 122);
+}
+
+.description .footer-left a{
+    color: rgb(174, 180, 188);
+}
+
+footer{
+    background-color: rgb(148,113,213);
+    margin: 0px -20px -20px -20px;
+}
+
+footer > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom:15px;
+}
+
+footer > div div{
+    flex-grow: 1;
+    padding-left: 10px;
+    padding-right: 15px;
+    width: 335px;
+}
+
+footer > div div ul{ 
+    list-style: none;
+    padding-left:0px;
+}
+
+footer > div div ul li{ 
+    border-bottom: 1px dotted white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: -55px;
+    max-width: 1130px;
+    margin: -50px auto 0;
+}
+
+.gallery > div{
+    border: 1px solid rgb(219, 222, 224);
+    border-radius: 5px;
+    overflow: auto;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.gallery > div .img-container{
+    overflow: hidden;
+}
+
+.gallery > div:hover img{
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+.gallery > div img{
+    border-radius:5px;
+}
+
+
+.gallery div .description-footer{
+    border-top: 1px solid rgb(219, 222, 224);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:0px;
+}
+
+.gallery div .description div{
+    padding: 6px 10px;
+}
+
+.gallery div .description-footer .footer-left a:not(:last-child)::after{
+    content:',';
+}
+
+h1{
+    font-size: 20px;
+}
+
+footer h1,
+footer div{
+    color: white;
+}
+
+
+@media (max-width: 768px){
+    footer .footer-section div,
+    footer .footer-section ul{
+        display: none;
+    }
+
+    footer > div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-section{
+        width:235px;
+    }
+}
