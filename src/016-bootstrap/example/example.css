@@ -3,3 +3,43 @@
  * Version: 1
  * By: xxx
  */
+.sidebar-top li > div{
+    margin-left: 10px;
+}
+
+.sidebar-top li div p{
+    margin-bottom: 0px;
+}
+
+.sidebar-top li > div a,
+.card .card-block a{
+    color: rgb(224, 171, 94);
+}
+
+.card button{
+    border:none;
+    font-weight: bold;
+}
+
+.card h3{
+    color:rgb(134,133,131);
+}
+
+.golden-button,
+.main-content button{
+    background-color: rgb(224, 171, 94);
+    color: white;
+}
+
+.card{
+  margin-bottom: 10px;
+}
+
+
+@media (min-width: 800px) {
+    .gallery > div{
+        /*!important to override given media querie*/
+        margin-left: 10px !important;
+    }
+}
+
